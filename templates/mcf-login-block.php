@@ -2,7 +2,7 @@
     <div class="small-12 column">
         <div class="mcf-connexion-block js-mcf-connexion-block">
             <h3 class="block-title">
-                Se connecter à l'extranet
+                
             </h3>
 
             <p>Connectez-vous à votre compte Extranet My Company Files</p>

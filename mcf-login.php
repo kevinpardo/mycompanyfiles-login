@@ -15,7 +15,8 @@ require_once(plugin_dir_path(__FILE__) . '/mcf-login-settings.php');
 /**
  * Create MyCompanyFiles Login block shortcode
  */
-add_shortcode('mcf-login', function () {
+function mcf_login_shortcode()
+{
     global $post;
     $content = '';
     $mcf_plugin_dir = plugin_dir_path(__FILE__);
@@ -34,19 +35,22 @@ add_shortcode('mcf-login', function () {
     $content = ob_get_contents();
     ob_end_clean();
     return $content;
-});
+}
+// WP hook to init shortcode
+add_shortcode('mcf-login', 'mcf_login_shortcode');
 
 /**
  * Enqueue JS Scripts & Stylesheet
  */
-
-add_action('wp_enqueue_scripts', function () {
-    $plugin_url = plugin_dir_url(__FILE__);
+function mcf_login_enqueue_scripts()
+{
     // Javascript file
-    wp_enqueue_script('mcf-login-js-file', $plugin_url . '/assets/js/mcf-login.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('mcf-login-js-file', plugins_url('/mcf-login/assets/js/mcf-login.js'), array('jquery'), '1.0.0', true);
     // Stylesheet
-    wp_register_style('mcf-login-stylesheet', $plugin_url . '/assets/css/mcf-login.css', array(), '1.0.0', 'all');
+    wp_register_style('mcf-login-stylesheet', plugins_url('/mcf-login/assets/css/mcf-login.css'), array(), '1.0.0', 'all');
     wp_enqueue_style('mcf-login-stylesheet');
     // Enqueue WP Dashicons
     wp_enqueue_style('dashicons');
-});
+}
+// WP Hook to enqueue scripts & stylesheet
+add_action('wp_enqueue_scripts', 'mcf_login_enqueue_scripts');
