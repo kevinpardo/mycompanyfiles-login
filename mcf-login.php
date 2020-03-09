@@ -13,6 +13,19 @@
 require_once(plugin_dir_path(__FILE__) . '/mcf-login-settings.php');
 
 /**
+ * On plugin init
+ *
+ */
+function mcf_login_plugin_init()
+{
+    $locale = apply_filters('plugin_locale', get_locale(), 'mcf_login');
+    load_textdomain('mcf_login', WP_LANG_DIR . '/mcf_login/mcf_login' . '-' . $locale . '.mo');
+    load_plugin_textdomain('mcf_login', false, dirname(plugin_basename(__FILE__)) . '/languages/');
+}
+add_action('init', 'mcf_login_plugin_init');
+
+
+/**
  * On plugin activation
  */
 function mcf_login_on_activation()
