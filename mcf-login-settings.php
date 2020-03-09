@@ -41,6 +41,14 @@ function mcf_login_settings_init()
         'mcf_login',
         'mcf_login_settings_section'
     );
+    // Front explanations setting field
+    add_settings_field(
+        'mcf_login_settings_front_explanations',
+        __('Explanations', 'mcf_login'),
+        'mcf_login_settings_front_explanations',
+        'mcf_login',
+        'mcf_login_settings_section'
+    );
 }
 // WP Hook to init settings
 add_action('admin_init', 'mcf_login_settings_init');
@@ -86,5 +94,18 @@ function mcf_login_settings_main_title($args)
     $options  = get_option('mcf_login_options');
     $content  = '<input style="min-width : 370px;" type="text" name="mcf_login_options[main_title]" value="' . (!empty($options['main_title']) ? $options['main_title'] : '') . '">';
     $content .= '<p class="description">' . __('Here you can manage the MyCompanyFiles Login form\'s main title', 'mcf_login') . '</p>';
+    print $content;
+}
+
+/**
+ * MyCompanyFiles front explanations setting
+ * @param array $args
+ *
+ */
+function mcf_login_settings_front_explanations($args)
+{
+    $options  = get_option('mcf_login_options');
+    $content  = '<textarea style="min-width : 370px;" rows="4" name="mcf_login_options[explanations]">' . (!empty($options['explanations']) ? $options['explanations'] : '') . '</textarea>';
+    $content .= '<p class="description">' . __('Here you can manage the MyCompanyFiles Login form\'s explanations', 'mcf_login') . '</p>';
     print $content;
 }
