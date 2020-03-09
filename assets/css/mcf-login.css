@@ -1,0 +1,254 @@
+.mcf-connexion-block {
+    display: block;
+    width: 100%;
+    padding: 30px;
+    margin: 30px auto;
+    background: #F5F5F5;
+}
+
+.mcf-connexion-block .block-title {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 110%;
+    color: #444;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.mcf-connexion-block .block-title:after {
+    content: '';
+    display: block;
+    width: 45px;
+    height: 1px;
+    margin: 15px auto 30px auto;
+    background: #2473AA;
+}
+
+.mcf-connexion-block p {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: #444;
+    text-align: center;
+    margin: 0 0 30px;
+    padding: 0;
+}
+
+.mcf-connexion-block .block-subtitle {
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 110%;
+    color: #444;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+    padding: 0;
+}
+
+.mcf-connexion-block ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mcf-connexion-block ul .item {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.mcf-connexion-block ul .item a {
+    color: #444;
+    display: block;
+    text-align: center;
+}
+
+.mcf-connexion-block ul .item a.on,
+.mcf-connexion-block ul .item a:hover,
+.mcf-connexion-block ul .item a:focus,
+.mcf-connexion-block ul .item a:active {
+    color: #2473AA;
+}
+
+.mcf-connexion-block ul .item a .dashicons {
+    display: block;
+    font-size: 90px;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+}
+
+.mcf-connexion-block ul .item a .name {
+    font-size: 1rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+.mcf-connexion-block .mcf-login-form {
+    display: none;
+}
+
+.mcf-connexion-block .mcf-login-form.visible {
+    display: block;
+}
+
+/**
+ * Forms
+ */
+.mcf-login-form {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 30px auto 0;
+}
+
+.mcf-login-form .form-label {
+    margin: 0 0 3px 0;
+    font-size: 0.875rem;
+    line-height: 100%;
+    color: #444;
+}
+
+.mcf-login-form .form-label sup {
+    color: red;
+}
+
+.mcf-login-form .form-input {
+    margin-bottom: 10px;
+}
+
+.mcf-login-form .form-input input {
+    width: 100%;
+    height: 42px;
+    padding: 0 5px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.mcf-login-form .form-input input:focus {
+    border-color: #2473AA;
+}
+
+.mcf-login-form .form-group.submit {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mcf-login-form .form-group.submit .mcf-forgot-password {
+    display: flex;
+    align-items: center;
+    flex-basis: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.mcf-login-form .form-group.submit .mcf-forgot-password a {
+    font-size: 0.75rem;
+    line-height: 100%;
+    color: #444;
+    opacity: 0.5;
+}
+
+.mcf-login-form .form-group.submit .mcf-forgot-password a:hover,
+.mcf-login-form .form-group.submit .mcf-forgot-password a:focus,
+.mcf-login-form .form-group.submit .mcf-forgot-password a:active {
+    opacity: 1;
+}
+
+.mcf-login-form .form-group.submit .submit-button {
+    flex-basis: 50%;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.mcf-login-form .form-group.submit .submit-button input[type="submit"] {
+    display: block;
+    color: #FFF;
+    font-size: 0.875rem;
+    line-height: 100%;
+    padding: 10px 15px;
+    background: #444;
+    border: none;
+    cursor: pointer;
+}
+
+.mcf-login-form .form-group.submit .submit-button input[type="submit"]:hover {
+    background: #2473AA;
+}
+
+.mcf-login-form .mcf-infos {
+    margin: 15px 0 0;
+    text-align: center;
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+.mcf-login-form .mcf-infos sup {
+    color: red;
+}
+
+.mcf-login-form .mcf-form-error, .mcf-login-form .mcf-form-success {
+    display: none;
+    color: #0a0a0a;
+    background: #f7e4e1;
+    padding: 10px;
+    border: 1px solid rgba(10, 10, 10, 0.25);
+    font-size: 0.875rem;
+    line-height: 115%;
+    text-align: center;
+    margin: 0 0 30px
+}
+
+.mcf-login-form .mcf-form-success {
+    background: #e1faea;
+}
+
+.mcf-login-form .mcf-form-error.visible, .mcf-login-form .mcf-form-success.visible {
+    display: block;
+}
+
+.mcf-login-form .form-title {
+    font-size: 1.05rem;
+    line-height: 100%;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #444;
+    text-transform: uppercase;
+}
+
+.mcf-login-form .form-title:after {
+    content: '';
+    display: block;
+    width: 45px;
+    height: 1px;
+    margin: 10px auto 30px auto;
+    background: #2473AA;
+}
+
+@media only screen and (max-width: 570px) {
+    .mcf-connexion-block {
+        padding: 15px 10px;
+    }
+
+    .mcf-connexion-block .block-title {
+        font-size: 1.1rem;
+    }
+
+    .mcf-connexion-block ul .item a .dashicons {
+        font-size: 60px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .mcf-connexion-block ul .item a .name {
+        font-size: 0.87rem;
+    }
+}
