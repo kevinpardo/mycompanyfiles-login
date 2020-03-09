@@ -8,6 +8,11 @@
 */
 
 /**
+ * Include Settings configuration page
+ */
+require_once(plugin_dir_path(__FILE__) . '/mcf-login-settings.php');
+
+/**
  * Create MyCompanyFiles Login block shortcode
  */
 add_shortcode('mcf-login', function () {
