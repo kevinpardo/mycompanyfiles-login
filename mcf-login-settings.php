@@ -5,7 +5,7 @@
 function mcf_login_admin_enqueue_scripts()
 {
     wp_enqueue_style('wp-color-picker');
-    wp_enqueue_script('mcf-login-admin-js', plugins_url('/mcf-login/assets/js/mcf-login-admin.js', __FILE__), array('jquery', 'wp-color-picker'), '1.0.0', true);
+    wp_enqueue_script('mcf-login-admin-js', plugins_url('/assets/js/mcf-login-admin.js', __FILE__), array('jquery', 'wp-color-picker'), '1.0.0', true);
 }
 // Admin enqueue scripts hooks
 add_action('admin_enqueue_scripts', 'mcf_login_admin_enqueue_scripts');

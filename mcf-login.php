@@ -13,6 +13,25 @@
 require_once(plugin_dir_path(__FILE__) . '/mcf-login-settings.php');
 
 /**
+ * On plugin activation
+ */
+function mcf_login_on_activation()
+{
+    update_option(
+        'mcf_login_options',
+        array(
+            'main_title'        => __('Sign in to the extranet', 'mcf_login'),
+            'explanations'      => __('Login to your MyCompanyFiles extranet account', 'mcf_login'),
+            'background_color'  => '#F5F5F5',
+            'main_color'        => '#444444',
+            'second_color'      => '#2473AA',
+        )
+    );
+}
+register_activation_hook(__FILE__, 'mcf_login_on_activation');
+
+
+/**
  * Create MyCompanyFiles Login block shortcode
  */
 function mcf_login_shortcode()
@@ -20,6 +39,8 @@ function mcf_login_shortcode()
     global $post;
     $content = '';
     $mcf_plugin_dir = plugin_dir_path(__FILE__);
+    // Get options
+    $mcf_options = get_option('mcf_login_options');
     // Form datas
     $forms = array(
         'provider'  => 'https://provider.mycompanyfiles.fr/Auth/Login',
