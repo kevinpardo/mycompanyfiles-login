@@ -1,7 +1,8 @@
 <?php
 /**
  Plugin Name: My Company Files login
- Description: This plugin generates a login form for My Company Files
+ Description: This plugin generates a login form for MyCompanyFiles service. Use [mcf_login] shortcode.
+ Plugin URI: https://github.com/lagriffedigitale/mycompanyfiles-login
  Version: 1.0.0
  Author: La Griffe Digitale
  Author URI: https://www.lagriffe-digitale.fr/
