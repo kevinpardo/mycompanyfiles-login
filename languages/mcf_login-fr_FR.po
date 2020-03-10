@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MyCompanyFiles\n"
-"POT-Creation-Date: 2020-03-09 19:05+0100\n"
-"PO-Revision-Date: 2020-03-09 19:13+0100\n"
+"POT-Creation-Date: 2020-03-10 12:09+0100\n"
+"PO-Revision-Date: 2020-03-10 12:10+0100\n"
 "Last-Translator: \n"
 "Language-Team: La Griffe Digitale\n"
 "Language: fr\n"
@@ -55,11 +55,11 @@ msgstr ""
 
 #: mcf-login-settings.php:98
 msgid ""
-"If you want to use this plugin via shortcode, use <strong>[mcf_login]</"
+"If you want to use this plugin via shortcode, use <strong>[mcf-login]</"
 "strong> shortcode."
 msgstr ""
 "Si vous souhaitez utiliser ce plugin via shortcode, utilisez le shortcode "
-"<strong>[mcf_login]</strong>"
+"<strong>[mcf_login]</strong>."
 
 #: mcf-login-settings.php:131
 msgid "Here you can manage the MyCompanyFiles Login form's main title"
@@ -91,11 +91,11 @@ msgstr ""
 "Ici vous pouvez gérer la couleur secondaire du bloc de connexion à "
 "MyCompanyFiles"
 
-#: mcf-login.php:36
+#: mcf-login.php:37
 msgid "Sign in to the extranet"
 msgstr "Connexion à l’extranet"
 
-#: mcf-login.php:37
+#: mcf-login.php:38
 msgid "Login to your MyCompanyFiles extranet account"
 msgstr "Connectez-vous à votre compte MyCompanyFiles"
 
@@ -119,8 +119,8 @@ msgstr "Les identifiants que vous avez renseignés sont incorrects."
 msgid ""
 "Your password has been reset. You can now log in with your new credentials."
 msgstr ""
-"Votre mot de passe a bien été modifié. Vous pouvez maintenant vous "
-"connecter avec vos nouveaux identifiants."
+"Votre mot de passe a bien été modifié. Vous pouvez maintenant vous connecter "
+"avec vos nouveaux identifiants."
 
 #: templates/mcf-login-form.php:14
 msgid "Your username"
@@ -134,11 +134,11 @@ msgstr "Votre mot de passe"
 msgid "Forgot your password ?"
 msgstr "Mot de passe oublié ?"
 
-#: templates/mcf-login-form.php:35
+#: templates/mcf-login-form.php:35 templates/mcf-recovery-form.php:23
 msgid "Validate"
 msgstr "Valider"
 
-#: templates/mcf-login-form.php:41
+#: templates/mcf-login-form.php:41 templates/mcf-recovery-form.php:28
 msgid "Required fields"
 msgstr "Champs obligatoires"
 
@@ -149,3 +149,15 @@ msgstr "Réglages enregistrés"
 #: templates/mcf-login-settings-page.php:16
 msgid "Save Settings"
 msgstr "Enregistrer"
+
+#: templates/mcf-recovery-form.php:2
+msgid "Forgotten password"
+msgstr "Mot de passe oublié"
+
+#: templates/mcf-recovery-form.php:4
+msgid "Request to reset the password failed"
+msgstr "La demande de réinitialisation de votre mot de passe a échoué"
+
+#: templates/mcf-recovery-form.php:8
+msgid "Your email address"
+msgstr "Votre adresse e-mail"

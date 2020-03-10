@@ -95,7 +95,7 @@ add_action('admin_init', 'mcf_login_settings_init');
 function mcf_login_settings_explanations()
 {
     print '<p>' . __('Here, you can change MyCompanyFiles Login plugin settings. You can manage displayed text and color.', 'mcf_login') . '</p>';
-    print '<p>' . __('If you want to use this plugin via shortcode, use <strong>[mcf_login]</strong> shortcode.', 'mcf_login') . '</p>';
+    print '<p>' . __('If you want to use this plugin via shortcode, use <strong>[mcf-login]</strong> shortcode.', 'mcf_login') . '</p>';
 }
 
 /**
