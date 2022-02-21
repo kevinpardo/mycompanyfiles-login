@@ -11,8 +11,6 @@ jQuery(document).ready(function ($) {
     }
   });
 
-  $("#customer").addClass("visible");
-
   $(".js-recovery-password-opener").click(function (e) {
     e.preventDefault();
     $(
@@ -22,4 +20,6 @@ jQuery(document).ready(function ($) {
       "visible"
     );
   });
+
+  $("#customer").addClass("visible");
 });
